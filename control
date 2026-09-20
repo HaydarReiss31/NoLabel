@@ -1,0 +1,10 @@
+Package: com.haydareiss.nolabelsx
+Name: NoLabelsX
+Version: 0.9.0
+Architecture: iphoneos-arm
+Description: Hides app icon labels on the Home Screen
+Maintainer: HaydarReiss31
+Author: HaydarReiss31
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 15.0)
+  
