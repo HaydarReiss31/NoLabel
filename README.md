@@ -1,36 +1,45 @@
 ![NoLabelsX](assets/banner.png)
 # NoLabelsX
 
-A simple **iOS 15 rootless** tweak that removes application labels from the Home Screen.
+A tiny rootless jailbreak tweak that hides the app name labels under Home Screen icons.
 
-## Features
+## Compatibility
 
-- Hides application names on the SpringBoard Home Screen.
-- Does not modify application icons or folders.
-- Designed for rootless jailbreak environments.
-
-## Requirements
-
-- iOS 15
-- A rootless jailbreak
-- A rootless-compatible package manager or installation method
-
-## Testing Status
-
-This tweak has been tested **only on an iPhone 7 running iOS 15**.
-
-Compatibility with other iPhone models or iOS versions is not guaranteed. Creating a backup before installing it on another device is recommended.
+- **Tested on:** iOS 15 (rootless)
+- **Requires:** a rootless jailbreak (e.g. Dopamine, palera1n rootless, XinaA15) and iOS 15.0 or later
+- Rootful jailbreaks (iOS 14 and below) are not supported by this build
+- iOS 16+ is untested and may or may not work
 
 ## Installation
 
-1. Build the project or download the released rootless package.
-2. Install the package using a rootless-compatible package manager.
-3. Respring SpringBoard if necessary.
-4. Return to the Home Screen and verify that application labels are hidden.
+1. Download the latest `.deb` from the [Releases](../../releases) page (or from the Actions artifacts).
+2. Install it with Sileo, Zebra or Filza.
+3. Respring.
 
-## Removal
+## Uninstall
 
-Remove the package through your package manager and respring SpringBoard.
+Remove **NoLabelsX** from your package manager and respring.
+
+## Building
+
+Requires [Theos](https://theos.dev).
+
+```sh
+git clone https://github.com/HaydarReiss31/NoLabel.git
+cd NoLabel
+make package FINALPACKAGE=1
+```
+
+The rootless `.deb` is written to `packages/`. Builds also run automatically on GitHub Actions.
+
+## How it works
+
+The tweak hooks `SBIconView` in SpringBoard and hides its label subviews by class name, so it does not depend on private ivar names.
+
+## Notes
+
+- Notification badges are left untouched.
+- If SpringBoard crashes into safe mode, remove the tweak in your package manager and respring.
 
 ## License
 
