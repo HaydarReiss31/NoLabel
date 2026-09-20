@@ -1,36 +1,36 @@
 # NoLabelsX
 
-Ana ekrandaki uygulama etiketlerini kaldıran, **iOS 15 rootless** için hazırlanmış basit bir tweak.
+A simple **iOS 15 rootless** tweak that removes application labels from the Home Screen.
 
-## Özellikler
+## Features
 
-- SpringBoard ana ekranındaki uygulama isimlerini gizler.
-- Uygulama ikonlarını ve klasörleri değiştirmez.
-- Rootless jailbreak ortamı için tasarlanmıştır.
+- Hides application names on the SpringBoard Home Screen.
+- Does not modify application icons or folders.
+- Designed for rootless jailbreak environments.
 
-## Gereksinimler
+## Requirements
 
 - iOS 15
-- Rootless jailbreak
-- Elle kurulum için uygun bir paket yöneticisi veya rootless uyumlu kurulum yöntemi
+- A rootless jailbreak
+- A rootless-compatible package manager or installation method
 
-## Test Durumu
+## Testing Status
 
-Bu tweak şu ana kadar **yalnızca iOS 15 yüklü iPhone 7 üzerinde test edilmiştir**.
+This tweak has been tested **only on an iPhone 7 running iOS 15**.
 
-Diğer iPhone modellerinde ve iOS sürümlerinde çalışacağı garanti edilmez. Farklı bir cihazda kullanmadan önce yedek almanız önerilir.
+Compatibility with other iPhone models or iOS versions is not guaranteed. Creating a backup before installing it on another device is recommended.
 
-## Kurulum
+## Installation
 
-1. Projeyi derleyin veya yayınlanan rootless paketini indirin.
-2. Paketi rootless uyumlu paket yöneticiniz üzerinden yükleyin.
-3. Gerekirse SpringBoard'u yeniden başlatın.
-4. Ana ekrana dönerek uygulama etiketlerinin kaldırıldığını kontrol edin.
+1. Build the project or download the released rootless package.
+2. Install the package using a rootless-compatible package manager.
+3. Respring SpringBoard if necessary.
+4. Return to the Home Screen and verify that application labels are hidden.
 
-## Kaldırma
+## Removal
 
-Paketi kullandığınız paket yöneticisi üzerinden kaldırın ve SpringBoard'u yeniden başlatın.
+Remove the package through your package manager and respring SpringBoard.
 
-## Lisans
+## License
 
-Bu proje [GNU General Public License v3.0](LICENSE) kapsamında lisanslanmıştır.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
