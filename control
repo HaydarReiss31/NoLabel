@@ -7,3 +7,4 @@ Maintainer: HaydarReiss31
 Author: HaydarReiss31
 Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 15.0)
+Icon: https://haydarreiss31.github.io/repo/icons/NoLabelsX.png
