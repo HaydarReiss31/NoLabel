@@ -3,14 +3,24 @@
 @interface SBIconView : UIView
 @end
 
+static void hideLabelViews(UIView *root) {
+    for (UIView *sub in root.subviews) {
+        NSString *name = NSStringFromClass([sub class]);
+        if ([name containsString:@"Badge"]) continue; // rozetlere dokunma
+        if ([name containsString:@"Label"]) {
+            sub.hidden = YES;
+            sub.alpha = 0.0;
+        } else {
+            hideLabelViews(sub);
+        }
+    }
+}
+
 %hook SBIconView
 
 - (void)layoutSubviews {
     %orig;
-    @try {
-        UIView *label = [self valueForKey:@"_labelView"];
-        label.hidden = YES;
-    } @catch (__unused NSException *e) {}
+    hideLabelViews(self);
 }
 
 %end
