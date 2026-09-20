@@ -25,8 +25,8 @@ Remove **NoLabelsX** from your package manager and respring.
 Requires [Theos](https://theos.dev).
 
 ```sh
-git clone https://github.com/HaydarReiss31/NoLabel.git
-cd NoLabel
+git clone https://github.com/HaydarReiss31/NoLabelsX.git
+cd NoLabelsX
 make package FINALPACKAGE=1
 ```
 
