@@ -1,6 +1,6 @@
 # NoLabelsX
 
-A simple **iOS 15 rootless** tweak that removes application labels from the Home Screen.
+A simple **iOS 15 rootless** tweak that removes application labels from the Home Screen
 
 ## Features
 
