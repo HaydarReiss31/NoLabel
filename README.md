@@ -1,4 +1,4 @@
-![CCAster](assets/banner.png)
+![NoLabelsX](assets/banner.png)
 # NoLabelsX
 
 A simple **iOS 15 rootless** tweak that removes application labels from the Home Screen.
